@@ -4,6 +4,7 @@ import Home from "./components/Home";
 import Contact from "./components/Contact";
 import About from "./components/About";
 import { useState, useEffect } from "react";
+import Multipliction from "./components/Multiply";
 
 function App() {
   const navigate = useNavigate();
@@ -57,6 +58,7 @@ function App() {
           </li>
         </ul>
       </nav>
+      <Multipliction n1={11} n2={10}/>
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
